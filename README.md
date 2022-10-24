@@ -1,27 +1,9 @@
 # algorand-session-wallet
 
-*PRs welcome*
+This is an updated version of Barnjamin's algorand-session-wallet that provides support for Pera Connect
 
-example: https://github.com/barnjamin/algorand-session-wallet-example
+Example: https://github.com/barnjamin/algorand-session-wallet-example
 
 ```sh
-npm -i algorand-session-wallet
-```
-
-```js
-const sw = new SessionWallet("TestNet", "algosigner-wallet")
-if(!sw.connect()) return alert("Couldnt connect")
-
-//...
-
-const accts = sw.accountList()
-
-//...
-
-sw.signTxn([txnblobs])
-
-//...
-
-sw.disconnect()
-
+npm i @imfeelingitchy/algorand-session-wallet
 ```
