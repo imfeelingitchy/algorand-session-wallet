@@ -2,6 +2,7 @@ import AlgoSignerWallet from "./wallets/algosigner";
 import MyAlgoConnectWallet from "./wallets/myalgoconnect";
 import InsecureWallet from "./wallets/insecure";
 import WC from "./wallets/walletconnect";
+import PeraConnect from "./wallets/peraconnect";
 import { PermissionCallback, Wallet, SignedTxn } from "./wallets/wallet";
 import { Transaction, TransactionSigner } from "algosdk";
 
@@ -13,6 +14,7 @@ export {
 } from "./wallets/wallet";
 
 export const allowedWallets = {
+  "pera-connect": PeraConnect,
   "wallet-connect": WC,
   "algo-signer": AlgoSignerWallet,
   "my-algo-connect": MyAlgoConnectWallet,

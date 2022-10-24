@@ -71,8 +71,8 @@ class MyAlgoConnectWallet implements Wallet {
   }
 
   async doSign(defaultAcct: string, txns: Transaction[]): Promise<SignedTxn[]> {
-    const unsigned = [];
-    const signedTxns = [];
+    const unsigned: any[] = [];
+    const signedTxns: any[] = [];
     for (const tidx in txns) {
       if (!txns[tidx]) continue;
 

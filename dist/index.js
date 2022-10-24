@@ -17,7 +17,9 @@ const algosigner_1 = __importDefault(require("./wallets/algosigner"));
 const myalgoconnect_1 = __importDefault(require("./wallets/myalgoconnect"));
 const insecure_1 = __importDefault(require("./wallets/insecure"));
 const walletconnect_1 = __importDefault(require("./wallets/walletconnect"));
+const peraconnect_1 = __importDefault(require("./wallets/peraconnect"));
 exports.allowedWallets = {
+    "pera-connect": peraconnect_1.default,
     "wallet-connect": walletconnect_1.default,
     "algo-signer": algosigner_1.default,
     "my-algo-connect": myalgoconnect_1.default,

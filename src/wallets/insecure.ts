@@ -55,7 +55,7 @@ class InsecureWallet implements Wallet {
     }
 
     async signTxn(txns: Transaction[]): Promise<SignedTxn[]> {
-        const signed = [];
+        const signed: any[] = [];
         const defaultAddr = this.getDefaultAccount()
         for(const txidx in txns){
             if(!txns[txidx]) continue

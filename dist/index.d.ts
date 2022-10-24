@@ -2,10 +2,12 @@ import AlgoSignerWallet from "./wallets/algosigner";
 import MyAlgoConnectWallet from "./wallets/myalgoconnect";
 import InsecureWallet from "./wallets/insecure";
 import WC from "./wallets/walletconnect";
+import PeraConnect from "./wallets/peraconnect";
 import { PermissionCallback, Wallet, SignedTxn } from "./wallets/wallet";
 import { Transaction, TransactionSigner } from "algosdk";
 export { PermissionResult, PermissionCallback, Wallet, SignedTxn, } from "./wallets/wallet";
 export declare const allowedWallets: {
+    "pera-connect": typeof PeraConnect;
     "wallet-connect": typeof WC;
     "algo-signer": typeof AlgoSignerWallet;
     "my-algo-connect": typeof MyAlgoConnectWallet;
